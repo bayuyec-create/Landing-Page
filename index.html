@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Out Gratis - Uji Kesiapanmu Sekarang!</title>
+    <!-- Memuat Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Memuat font Inter dari Google Fonts --><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- 1. Menambahkan Script Lottie Player -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <style>
+        /* Menerapkan font Inter sebagai font utama */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Efek gradien halus untuk hero section dengan nuansa oranye */
+        .hero-gradient {
+            background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%); /* Orange muda ke oranye lebih terang */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ===== Header / Navigasi ===== --><header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo (Teks) --><div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-orange-600">
+                        Bakat by YEC.CO.ID
+                    </a>
+                </div>
+                <!-- Tombol Navigasi Kanan --><div class="flex items-center">
+                    <a href="#fitur" class="text-gray-600 hover:text-orange-600 px-3 py-2 rounded-md text-sm font-medium hidden sm:block">Fitur</a>
+                    <a href="#testimoni" class="text-gray-600 hover:text-orange-600 px-3 py-2 rounded-md text-sm font-medium hidden sm:block">Testimoni</a>
+                    <a href="#" class="ml-4 px-4 py-2 border border-transparent text-sm font-medium rounded-md text-orange-700 bg-orange-100 hover:bg-orange-200">
+                        Login
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== Main Content ===== --><main>
+        <!-- ===== Hero Section ===== --><section class="hero-gradient">
+            <!-- Mengurangi padding atas (pt-20 -> pt-12) dan (md:pt-28 -> md:pt-16) -->
+            <!-- Juga mengurangi padding bawah agar proporsional (pb-24 -> pb-16) dan (md:pb-32 -> md:pb-20) -->
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16 md:pt-16 md:pb-20">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                    
+                    <!-- Kolom Teks (Kiri) --><div class="md:w-1/2 text-center md:text-left">
+                        <span class="inline-block px-3 py-1 text-sm font-semibold text-orange-800 bg-orange-100 rounded-full mb-4">
+                            PERSIAPAN UJIAN #1
+                        </span>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 mb-6">
+                            Siap Taklukkan Ujian?
+                            <span class="block text-orange-600">Ukur Kesiapanmu di Sini.</span>
+                        </h1>
+                        <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-lg mx-auto md:mx-0">
+                            Dapatkan pengalaman tes yang realistis, lengkap dengan analisis skor instan dan pembahasan mendalam. Semuanya gratis!
+                        </p>
+                        
+                        <!-- Tombol CTA Utama --><div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                            <a href="#mulai-tes" id="startButton" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-lg text-white bg-orange-600 hover:bg-orange-700 shadow-lg transform transition-transform hover:scale-105">
+                                Mulai Tes Gratis Sekarang
+                                <svg class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-4">Tanpa biaya, tanpa syarat tersembunyi.</p>
+                    </div>
+
+                    <!-- Kolom Gambar (Kanan) --><div class="md:w-1/2 w-full max-w-md mx-auto md:max-w-none">
+                        <img src="https://placehold.co/600x500/ffedd5/f97316?text=Ilustrasi+Try+Out" 
+                             alt="Ilustrasi siswa sedang mengerjakan tes online" 
+                             class="rounded-lg shadow-2xl object-cover w-full h-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Bagian Fitur Unggulan (Kenapa Kami?) ===== --><section id="fitur" class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-gray-900">
+                        Kenapa Memilih Try Out Kami?
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+                        Kami menyediakan fitur terbaik untuk membantumu lolos seleksi.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Fitur 1: Soal Berkualitas --><div class="text-center p-8 bg-white rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <!-- 3. Mengganti SVG dengan Lottie Player -->
+                        <!-- Container ikon diperbesar menjadi h-32 w-32 (128px) agar animasi muat -->
+                        <div class="flex items-center justify-center h-32 w-32 mx-auto mb-5">
+                            <lottie-player 
+                                src="https://lottie.host/a3b7a5e8-5b12-4c12-9b23-0b1f237f3a7a/fS5ILzYR4R.json" 
+                                background="transparent" 
+                                speed="1" 
+                                class="w-full h-full" 
+                                hover> <!-- 'hover' berarti animasi main saat kursor di atasnya -->
+                            </lottie-player>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Soal Standar Ujian Asli</h3>
+                        <p class="text-gray-600 text-base">
+                            Dibuat oleh para ahli di bidangnya, soal kami dirancang semirip mungkin dengan tes yang sesungguhnya.
+                        </p>
+                    </div>
+
+                    <!-- Fitur 2: Analisis Instan --><div class="text-center p-8 bg-white rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <!-- 3. Mengganti SVG dengan Lottie Player -->
+                        <div class="flex items-center justify-center h-32 w-32 mx-auto mb-5">
+                            <lottie-player 
+                                src="https://lottie.host/e2d08a6e-4b40-4f51-8a9d-1b1579b18349/Nknx3j8yP3.json" 
+                                background="transparent" 
+                                speed="1" 
+                                class="w-full h-full" 
+                                hover>
+                            </lottie-player>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Penilaian & Analisis Instan</h3>
+                        <p class="text-gray-600 text-base">
+                            Tak perlu menunggu lama. Lihat skormu, jawaban benar/salah, dan analisis kemampuan langsung setelah tes selesai.
+                        </p>
+                    </div>
+
+                    <!-- Fitur 3: Pembahasan Lengkap --><div class="text-center p-8 bg-white rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <!-- 3. Mengganti SVG dengan Lottie Player -->
+                        <div class="flex items-center justify-center h-32 w-32 mx-auto mb-5">
+                            <lottie-player 
+                                src="https://lottie.host/8e2f4f20-9a1b-4f9b-81f7-e2a632c0d5b7/N085dYxU7K.json" 
+                                background="transparent" 
+                                speed="1" 
+                                class="w-full h-full" 
+                                hover>
+                            </lottie-player>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Pembahasan Mendalam</h3>
+                        <p class="text-gray-600 text-base">
+                            Pahami letak kesalahanmu dengan pembahasan soal yang jelas, lengkap, dan mudah dimengerti.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Bagian Testimoni (Social Proof) ===== --><section id="testimoni" class="py-20 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-gray-900">
+                        Apa Kata Mereka yang Sudah Mencoba?
+                    </h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimoni 1 --><div class="bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-gray-600 italic mb-4">"Try out gratisnya benar-benar membantu! Soalnya mirip banget sama aslinya dan pembahasannya gampang dimengerti. Skor saya jadi meningkat."</p>
+                        <div class="flex items-center">
+                            <img class="w-10 h-10 rounded-full mr-4" src="https://placehold.co/40x40/ffedd5/f97316?text=R" alt="Avatar Rina">
+                            <div>
+                                <p class="font-semibold text-gray-900">Prahoro Yudo.</p>
+                                <p class="text-sm text-gray-500">Pejuang PTN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimoni 2 --><div class="bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-gray-600 italic mb-4">"Analisis skornya instan, jadi saya bisa langsung tahu kelemahan saya di materi apa. Keren banget, dan ini gratis!"</p>
+                        <div class="flex items-center">
+                            <img class="w-10 h-10 rounded-full mr-4" src="https://placehold.co/40x40/ffedd5/f97316?text=B" alt="Avatar Budi">
+                            <div>
+                                <p class="font-semibold text-gray-900">Bayu Krisna.</p>
+                                <p class="text-sm text-gray-500">Calon ASN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimoni 3 --><div class="bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-gray-600 italic mb-4">"Platformnya elegan dan mudah dipakai. Nggak ada iklan yang mengganggu. Sangat fokus untuk belajar. Terima kasih!"</p>
+                        <div class="flex items-center">
+                            <img class="w-10 h-10 rounded-full mr-4" src="https://placehold.co/40x40/ffedd5/f97316?text=A" alt="Avatar Anita">
+                            <div>
+                                <p class="font-semibold text-gray-900">Nawang Putri.</p>
+                                <p class="text-sm text-gray-500">Siswa SMA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Final CTA (Call to Action) ===== --><section id="mulai-tes" class="bg-orange-700">
+            <div class="max-w-4xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                    <span class="block">Masih Ragu?</span>
+                    <span class="block">Coba Saja Dulu, Gratis!</span>
+                </h2>
+                <p class="mt-4 text-lg leading-6 text-orange-100">
+                    Tidak ada ruginya mencoba. Dapatkan gambaran nyata kemampuanmu hanya dalam beberapa klik.
+                </p>
+                <a href="#mulai-tes" id="startButton2" class="mt-8 w-full inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-lg text-orange-600 bg-white hover:bg-orange-50 sm:w-auto transform transition-transform hover:scale-105 shadow-lg">
+                    Ambil Tes Gratis Saya
+                    <svg class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== Footer ===== --><footer class="bg-white border-t border-gray-200">
+        <div class="max-w-6xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-base text-gray-500">
+                &copy; 2025 Bakat. Semua Hak Cipta Dilindungi.
+            </p>
+            <!-- Opsional: Tambahkan link media sosial jika ada --></div>
+    </footer>
+
+    <!-- ===== Modal Notifikasi (Pengganti alert) ===== --><div id="messageBox" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4 z-50 hidden transition-opacity duration-300">
+        <div class="bg-white rounded-lg shadow-xl max-w-sm w-full p-6 text-center transform transition-all scale-95 opacity-0" id="messageBoxContent">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-orange-100 text-orange-600 mx-auto mb-4">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18c-2.305 0-4.408.867-6 2.292m0-14.25v14.25" />
+                </svg>
+            </div>
+            <h3 class="text-lg font-medium text-gray-900 mb-2">Mempersiapkan Halaman Tes...</h3>
+            <p class="text-sm text-gray-600 mb-6">
+                Anda akan segera diarahkan ke halaman tes. Selamat mengerjakan!
+            </p>
+            <button id="closeButton" class="w-full px-4 py-2 bg-orange-600 text-white rounded-lg font-medium hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
+                Tutup
+            </button>
+        </div>
+    </div>
+
+
+    <script>
+        // --- Skrip untuk Modal (Pengganti Alert) ---
+
+        // Ambil elemen-elemen yang dibutuhkan
+        const startButton = document.getElementById('startButton');
+        const startButton2 = document.getElementById('startButton2');
+        const closeButton = document.getElementById('closeButton');
+        const messageBox = document.getElementById('messageBox');
+        const messageBoxContent = document.getElementById('messageBoxContent');
+
+        // Fungsi untuk menampilkan modal
+        function showModal(e) {
+            e.preventDefault(); // Mencegah link # pindah halaman
+            messageBox.classList.remove('hidden');
+            // Memicu transisi
+            setTimeout(() => {
+                messageBox.classList.add('opacity-100');
+                messageBoxContent.classList.add('scale-100', 'opacity-100');
+            }, 10); // delay kecil untuk memastikan transisi CSS berjalan
+        }
+
+        // Fungsi untuk menyembunyikan modal
+        function hideModal() {
+            messageBoxContent.classList.remove('scale-100', 'opacity-100');
+            messageBox.classList.remove('opacity-100');
+            // Tunggu transisi selesai baru disembunyikan
+            setTimeout(() => {
+                messageBox.classList.add('hidden');
+                // Di sini Anda bisa menambahkan logika untuk benar-benar pindah halaman,
+                // misalnya: window.location.href = 'halaman-tes.html';
+            }, 300); 
+        }
+
+        // Tambahkan event listener ke tombol-tombol
+        startButton.addEventListener('click', showModal);
+        startButton2.addEventListener('click', showModal);
+        closeButton.addEventListener('click', hideModal);
+
+        // Tutup modal jika klik di luar area konten
+        messageBox.addEventListener('click', function(e) {
+            if (e.target === messageBox) {
+                hideModal();
+            }
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
+
